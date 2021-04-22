@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maha Travels</title>
+</head>
+<body style="background-image:url(tours.jpg);">
+<CENTER><img src="logo.png" height="500PX"></CENTER>
+<table style="width:100%;
+	background-color: green; height: 50px;font-size: 30px">
+<tr> 
+<td><a class="active" href="#home">Home</a></td>
+<td><a href="tours.html">tours</a></td>
+<td><a href="about us.html">About Us</a></td>
+<td><a href="contact us.html">Contact Us</a></td>
+</tr>                
+</table><br><br><br><br>
+<h2 class="w3-center">Some pictures to show our class and dedication</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="maldives.jpg" style="width:100%">
+  <img class="mySlides" src="zermatt.jpg" style="width:100%">
+  <img class="mySlides" src="travel.jpg" style="width:100%">
+  <img class="mySlides" src="1551769255_delay.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<table>
+		<tr>
+			<td ><a href="tours.html"><img src="maldives.jpg"height="200px"></a></td>
+			<td style="font-size: 30px;font-family: Optima; color: red">1}From Maldives  </td>
+			<td ><a href="tours.html"><img src="zermatt.jpg"height="200px"></a></td>
+			<td style="font-size: 30px;font-family: Optima; color: red">2}to Zermatt</td>
+		</tr>
+		<br><br><br><br><br>
+		<tr>
+		<td ><a href="about us.html"><img src="travel.jpg"height="200px"></a></td>
+		<td style="font-size: 30px;font-family: Optima; color: red">3}to any where in the world</td>
+			<td ><a href="about us.html"><img src="1551769255_delay.jpg"height="200px"></a></td>
+			<td style="font-size: 30px;font-family: Optima; color: red">4}Within a day,without any cancellations or delay </td>
+		</tr>
+	</table>
+	
+	<marquee style="background-color: yellow; font-family:Courier;color: green; ">Early bird gifts till 25th july</marquee>
+	<marquee style="background-color: yellow; font-family:Courier;color: green; ">Please donate to pour sponsored charity fund, Manchester United <a href="https://www.mufoundation.org/en/Charity"><button> click here</button></a></marquee>
+
+</body>
+</html>
